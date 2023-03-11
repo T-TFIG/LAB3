@@ -46,9 +46,10 @@ DMA_HandleTypeDef hdma_tim2_ch1;
 UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
-uint32_t InputCaptureBuffer[IC_BUFFER_SIZE];
+uint32_t Input_A[IC_BUFFER_SIZE];
+uint32_t Input_B[IC_BUFFER_SIZE];
 float averageRisingedgePeriod;
-uint32_t duty = 1000;
+uint32_t MotorSetDuty = 10; // 0 - 100%
 uint32_t AVG = 0;
 float Avg_vel = 0.0;
 /* USER CODE END PV */
@@ -103,7 +104,8 @@ int main(void)
   MX_TIM1_Init();
   /* USER CODE BEGIN 2 */
   HAL_TIM_Base_Start(&htim2);
-  HAL_TIM_IC_Start_DMA(&htim2, TIM_CHANNEL_1, InputCaptureBuffer, IC_BUFFER_SIZE);
+  HAL_TIM_IC_Start_DMA(&htim2, TIM_CHANNEL_1, Input_A, IC_BUFFER_SIZE);
+  HAL_TIM_IC_Start_DMA(&htim2, TIM_CHANNEL_2, Input_B, IC_BUFFER_SIZE);
 
   HAL_TIM_Base_Start(&htim1);
   HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
@@ -116,6 +118,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+	  uint32_t drive = MotorSetDuty * 10;
 	  AVG = IC_Calc_Period();
 	  static uint32_t timestamp = 0;
 	  if(HAL_GetTick()>= timestamp)
@@ -123,7 +126,7 @@ int main(void)
 		  timestamp = HAL_GetTick() + 500;
 		  averageRisingedgePeriod = IC_Calc_Period();
 
-		  __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,duty);
+		  __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,drive);
 	  }
   }
   /* USER CODE END 3 */
@@ -302,7 +305,7 @@ static void MX_TIM2_Init(void)
   {
     Error_Handler();
   }
-  if (HAL_TIM_IC_ConfigChannel(&htim2, &sConfigIC, TIM_CHANNEL_3) != HAL_OK)
+  if (HAL_TIM_IC_ConfigChannel(&htim2, &sConfigIC, TIM_CHANNEL_2) != HAL_OK)
   {
     Error_Handler();
   }
@@ -399,12 +402,12 @@ float IC_Calc_Period()
 {
 	double send_avg;
 	uint32_t current_state = 20 - __HAL_DMA_GET_COUNTER((htim2.hdma[1]));
-	for(int i = 0; i <= 4;i++){
+	for(int i = 1; i <= 5;i++){
 		if(current_state - i < 0){
-			Avg_vel += InputCaptureBuffer[current_state - i + 20];
+			Avg_vel += Input_A[current_state - i + 20];
 		}
 		else{
-			Avg_vel += InputCaptureBuffer[current_state - i];
+			Avg_vel += Input_A[current_state - i];
 		}
 	}
 	send_avg = Avg_vel/5.0;
