@@ -109,7 +109,6 @@ int main(void)
 
   HAL_TIM_Base_Start(&htim1);
   HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
-  HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_2);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -129,13 +128,12 @@ int main(void)
 		  averageRisingedgePeriod = IC_Calc_Period();
 
 		  if(drive < 0){
-			  __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,0);
-			  __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2,-1*drive);
-
-		  }
-		  else if(drive > 0){
 			  __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,drive);
 			  __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2,0);
+		  }
+		  else if(drive > 0){
+			  __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,0);
+			  __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2,-1*drive);
 		  }
 		  else{
 			  __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,0);

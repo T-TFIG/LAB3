@@ -128,19 +128,20 @@ int main(void)
 		  timestamp = HAL_GetTick() + 500;
 		  averageRisingedgePeriod = IC_Calc_Period();
 
-		  if(drive < 0){
-			  __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,0);
-			  __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2,-1*drive);
+		  __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2,100);
 
-		  }
-		  else if(drive > 0){
-			  __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,drive);
-			  __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2,0);
-		  }
-		  else{
-			  __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,0);
-			  __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2,0);
-		  }
+//		  if(drive < 0){
+//			  __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,drive);
+//			  __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2,0);
+//		  }
+//		  else if(drive > 0){
+//			  __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,0);
+//			  __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2,-1*drive);
+//		  }
+//		  else{
+//			  __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,0);
+//			  __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2,0);
+//		  }
 
 	  }
   }

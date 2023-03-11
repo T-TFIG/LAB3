@@ -240,3 +240,188 @@ arm-none-eabi-size   LAB3.elf
   18864	     24	   2056	  20944	   51d0	LAB3.elf
 Finished building: default.size.stdout
  
+10:39:28 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18864	     24	   2056	  20944	   51d0	LAB3.elf
+Finished building: default.size.stdout
+ 
+10:40:27 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18864	     24	   2056	  20944	   51d0	LAB3.elf
+Finished building: default.size.stdout
+ 
+10:43:18 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  18864	     24	   2056	  20944	   51d0	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+10:44:00 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  18864	     24	   2056	  20944	   51d0	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+10:45:07 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:121:12: warning: unused variable 'drive' [-Wunused-variable]
+  121 |    int32_t drive = MotorSetDuty * 10;
+      |            ^~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  18868	     24	   2056	  20948	   51d4	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+10:46:25 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  18864	     24	   2056	  20944	   51d0	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+10:53:28 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  18952	     24	   2056	  21032	   5228	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+10:54:53 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:121:12: warning: unused variable 'drive' [-Wunused-variable]
+  121 |    int32_t drive = MotorSetDuty * 10;
+      |            ^~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  18900	     24	   2056	  20980	   51f4	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+10:58:08 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:121:12: warning: unused variable 'drive' [-Wunused-variable]
+  121 |    int32_t drive = MotorSetDuty * 10;
+      |            ^~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  18892	     24	   2056	  20972	   51ec	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+11:01:43 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18892	     24	   2056	  20972	   51ec	LAB3.elf
+Finished building: default.size.stdout
+ 
+11:02:47 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:122:12: warning: unused variable 'drive' [-Wunused-variable]
+  122 |    int32_t drive = MotorSetDuty * 10;
+      |            ^~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  18908	     24	   2056	  20988	   51fc	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+11:03:42 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  18960	     24	   2056	  21040	   5230	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+11:04:57 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  18960	     24	   2056	  21040	   5230	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+11:06:25 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18960	     24	   2056	  21040	   5230	LAB3.elf
+Finished building: default.size.stdout
+ 
