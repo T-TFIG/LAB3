@@ -1,10 +1,28 @@
-11:06:25 **** Incremental Build of configuration Debug for project LAB3 ****
+23:12:34 **** Incremental Build of configuration Debug for project LAB3 ****
 make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:149:5: warning: implicit declaration of function 'before_and_after' [-Wimplicit-function-declaration]
+  149 |     before_and_after();
+      |     ^~~~~~~~~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:443:6: warning: conflicting types for 'before_and_after'
+  443 | void before_and_after()
+      |      ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:149:5: note: previous implicit declaration of 'before_and_after' was here
+  149 |     before_and_after();
+      |     ^~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
 arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
    text	   data	    bss	    dec	    hex	filename
-  18960	     24	   2056	  21040	   5230	LAB3.elf
+  19228	     24	   2072	  21324	   534c	LAB3.elf
 Finished building: default.size.stdout
  
+Finished building: LAB3.list
+ 
 
-11:06:25 Build Finished. 0 errors, 0 warnings. (took 767ms)
+23:12:36 Build Finished. 0 errors, 2 warnings. (took 1s.745ms)
 

@@ -52,6 +52,11 @@ float averageRisingedgePeriod;
 int32_t MotorSetDuty = -10; // [(-100) - (100)]%
 uint32_t AVG = 0;
 float Avg_vel = 0.0;
+float Answer;
+float Compare;
+uint32_t before;
+uint32_t after;
+float divide;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -83,7 +88,7 @@ int main(void)
   /* MCU Configuration--------------------------------------------------------*/
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-  HAL_Init();
+   HAL_Init();
 
   /* USER CODE BEGIN Init */
 
@@ -125,7 +130,7 @@ int main(void)
 
 	  if(HAL_GetTick()>= timestamp)
 	  {
-		  timestamp = HAL_GetTick() + 500;
+		  timestamp = HAL_GetTick() + 10;
 		  averageRisingedgePeriod = IC_Calc_Period();
 
 		  if(drive < 0){
@@ -141,7 +146,8 @@ int main(void)
 			  __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,0);
 			  __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2,0);
 		  }
-
+		  before_and_after();
+		  PID(MotorSetDuty*1.2, before_and_after());
 	  }
   }
   /* USER CODE END 3 */
@@ -434,6 +440,39 @@ float IC_Calc_Period()
 	Avg_vel = 0;
 	return send_avg;
 }
+
+float before_and_after()
+{
+	float degree_per_sec;
+	for(int i = 0; i <= 5; i++){
+		if(__HAL_DMA_GET_COUNTER((htim2.hdma[1])) - i < 0){
+				Compare += ((Input_A[__HAL_DMA_GET_COUNTER((htim2.hdma[1])) - i] - Input_A[20 - __HAL_DMA_GET_COUNTER((htim2.hdma[1])) - (i+1)])) / 100000;
+		}
+
+		else{
+				before = Input_A[__HAL_DMA_GET_COUNTER(htim2.hdma[1])];
+				after = Input_A[__HAL_DMA_GET_COUNTER((htim2.hdma[1])) - 1];
+				Compare += (Input_A[__HAL_DMA_GET_COUNTER(htim2.hdma[1])- i] - Input_A[__HAL_DMA_GET_COUNTER((htim2.hdma[1])) - (i+1)]);
+
+		}
+	}
+	Compare /= 5;
+	divide = Compare / 100000;
+	degree_per_sec = 30 / divide; //30 = degree from 12 ppr
+	Answer = (degree_per_sec / 64); //RPM
+	Compare = 0;
+	return Answer;
+
+}
+
+void PID(float setpoint, float encoder){
+	float error;
+	static float cumError;
+	error = setpoint - encoder;
+
+	cumError = error * 0.5;
+}
+
 /* USER CODE END 4 */
 
 /**
