@@ -46,11 +46,10 @@ DMA_HandleTypeDef hdma_tim2_ch1;
 UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
-
 uint32_t Input_A[IC_BUFFER_SIZE];
 uint32_t Input_B[IC_BUFFER_SIZE];
 float averageRisingedgePeriod;
-int32_t MotorSetDuty = 10; // [(-100) - (100)]%
+int32_t MotorSetDuty = -10; // [(-100) - (100)]%
 uint32_t AVG = 0;
 float Avg_vel = 0.0;
 float Answer;
@@ -60,10 +59,6 @@ uint32_t after;
 float divide;
 float real_PI;
 float drive;
-float error;
-static float cumError;
-float debug;
-
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -75,7 +70,7 @@ static void MX_TIM2_Init(void);
 static void MX_TIM1_Init(void);
 /* USER CODE BEGIN PFP */
 float IC_Calc_Period();
-void motor(),before_and_after(),motor(double volt, double maxvolt),PID(float setpoint, float encoder);
+void motor(),before_and_after();
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -481,18 +476,18 @@ void motor(double volt, double maxvolt){
 void PID(float setpoint, float encoder){
 	// P and I no D
 
+	float error;
 
 	float Kp = 0.05;
 	float Ki = 0.01;
 
-
+	static float cumError;
 	error = setpoint - encoder;
-	debug = error * 0.01;
 
 	cumError += error * 0.01;
 
 	real_PI = (Kp * error + Ki * cumError);
-	motor(real_PI,3.3);
+	motor(real_PI,5);
 
 }
 

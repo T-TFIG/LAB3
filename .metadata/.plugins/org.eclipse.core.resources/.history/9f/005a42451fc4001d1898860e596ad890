@@ -61,7 +61,7 @@ float divide;
 float real_PI;
 float drive;
 float error;
-static float cumError;
+static long float cumError;
 float debug;
 
 /* USER CODE END PV */

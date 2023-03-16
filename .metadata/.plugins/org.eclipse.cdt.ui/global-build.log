@@ -1155,3 +1155,422 @@ Finished building: default.size.stdout
  
 Finished building: LAB3.list
  
+00:00:27 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:136:5: warning: implicit declaration of function 'before_and_after' [-Wimplicit-function-declaration]
+  136 |     before_and_after();
+      |     ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:137:5: warning: implicit declaration of function 'PID' [-Wimplicit-function-declaration]
+  137 |     PID(MotorSetDuty*1.2, before_and_after());
+      |     ^~~
+../Core/Src/main.c:127:12: warning: unused variable 'drive' [-Wunused-variable]
+  127 |    int32_t drive = MotorSetDuty * 10;
+      |            ^~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:431:7: error: conflicting types for 'before_and_after'
+  431 | float before_and_after()
+      |       ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:136:5: note: previous implicit declaration of 'before_and_after' was here
+  136 |     before_and_after();
+      |     ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:455:6: warning: conflicting types for 'PID'
+  455 | void PID(float setpoint, float encoder){
+      |      ^~~
+../Core/Src/main.c:137:5: note: previous implicit declaration of 'PID' was here
+  137 |     PID(MotorSetDuty*1.2, before_and_after());
+      |     ^~~
+../Core/Src/main.c: In function 'PID':
+../Core/Src/main.c:469:2: warning: implicit declaration of function 'motor' [-Wimplicit-function-declaration]
+  469 |  motor(real_PI);
+      |  ^~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:473:6: warning: conflicting types for 'motor'
+  473 | void motor(double volt, double maxvolt){
+      |      ^~~~~
+../Core/Src/main.c:469:2: note: previous implicit declaration of 'motor' was here
+  469 |  motor(real_PI);
+      |  ^~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+00:02:43 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:136:5: warning: implicit declaration of function 'before_and_after' [-Wimplicit-function-declaration]
+  136 |     before_and_after();
+      |     ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:137:5: warning: implicit declaration of function 'PID' [-Wimplicit-function-declaration]
+  137 |     PID(MotorSetDuty*1.2, before_and_after());
+      |     ^~~
+../Core/Src/main.c:127:12: warning: unused variable 'drive' [-Wunused-variable]
+  127 |    int32_t drive = MotorSetDuty * 10;
+      |            ^~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:431:7: error: conflicting types for 'before_and_after'
+  431 | float before_and_after()
+      |       ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:136:5: note: previous implicit declaration of 'before_and_after' was here
+  136 |     before_and_after();
+      |     ^~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:450:8: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  450 |  Answer,sub_ans = (degree_per_sec / 64); //RPM
+      |        ^
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:456:6: warning: conflicting types for 'PID'
+  456 | void PID(float setpoint, float encoder){
+      |      ^~~
+../Core/Src/main.c:137:5: note: previous implicit declaration of 'PID' was here
+  137 |     PID(MotorSetDuty*1.2, before_and_after());
+      |     ^~~
+../Core/Src/main.c: In function 'PID':
+../Core/Src/main.c:470:2: warning: implicit declaration of function 'motor' [-Wimplicit-function-declaration]
+  470 |  motor(real_PI);
+      |  ^~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:474:6: warning: conflicting types for 'motor'
+  474 | void motor(double volt, double maxvolt){
+      |      ^~~~~
+../Core/Src/main.c:470:2: note: previous implicit declaration of 'motor' was here
+  470 |  motor(real_PI);
+      |  ^~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+00:03:50 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:136:5: warning: implicit declaration of function 'before_and_after' [-Wimplicit-function-declaration]
+  136 |     before_and_after();
+      |     ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:137:5: warning: implicit declaration of function 'PID' [-Wimplicit-function-declaration]
+  137 |     PID(MotorSetDuty*1.2, Answer);
+      |     ^~~
+../Core/Src/main.c:127:12: warning: unused variable 'drive' [-Wunused-variable]
+  127 |    int32_t drive = MotorSetDuty * 10;
+      |            ^~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:431:6: warning: conflicting types for 'before_and_after'
+  431 | void before_and_after()
+      |      ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:136:5: note: previous implicit declaration of 'before_and_after' was here
+  136 |     before_and_after();
+      |     ^~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:434:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  434 |  float sub_ans;
+      |        ^~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:455:6: warning: conflicting types for 'PID'
+  455 | void PID(float setpoint, float encoder){
+      |      ^~~
+../Core/Src/main.c:137:5: note: previous implicit declaration of 'PID' was here
+  137 |     PID(MotorSetDuty*1.2, Answer);
+      |     ^~~
+../Core/Src/main.c: In function 'PID':
+../Core/Src/main.c:469:2: warning: implicit declaration of function 'motor' [-Wimplicit-function-declaration]
+  469 |  motor(real_PI);
+      |  ^~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:473:6: warning: conflicting types for 'motor'
+  473 | void motor(double volt, double maxvolt){
+      |      ^~~~~
+../Core/Src/main.c:469:2: note: previous implicit declaration of 'motor' was here
+  469 |  motor(real_PI);
+      |  ^~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  19592	     24	   2080	  21696	   54c0	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+00:05:15 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19592	     24	   2080	  21696	   54c0	LAB3.elf
+Finished building: default.size.stdout
+ 
+00:08:46 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:137:5: warning: implicit declaration of function 'before_and_after' [-Wimplicit-function-declaration]
+  137 |     before_and_after();
+      |     ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:138:5: warning: implicit declaration of function 'PID' [-Wimplicit-function-declaration]
+  138 |     PID(MotorSetDuty*1.2, Answer);
+      |     ^~~
+../Core/Src/main.c:128:12: warning: unused variable 'drive' [-Wunused-variable]
+  128 |    int32_t drive = MotorSetDuty * 10;
+      |            ^~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:432:6: warning: conflicting types for 'before_and_after'
+  432 | void before_and_after()
+      |      ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:137:5: note: previous implicit declaration of 'before_and_after' was here
+  137 |     before_and_after();
+      |     ^~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:435:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  435 |  float sub_ans;
+      |        ^~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:456:6: warning: conflicting types for 'PID'
+  456 | void PID(float setpoint, float encoder){
+      |      ^~~
+../Core/Src/main.c:138:5: note: previous implicit declaration of 'PID' was here
+  138 |     PID(MotorSetDuty*1.2, Answer);
+      |     ^~~
+../Core/Src/main.c: In function 'PID':
+../Core/Src/main.c:470:2: warning: implicit declaration of function 'motor' [-Wimplicit-function-declaration]
+  470 |  motor(real_PI);
+      |  ^~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:474:6: warning: conflicting types for 'motor'
+  474 | void motor(double volt, double maxvolt){
+      |      ^~~~~
+../Core/Src/main.c:470:2: note: previous implicit declaration of 'motor' was here
+  470 |  motor(real_PI);
+      |  ^~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  19604	     24	   2080	  21708	   54cc	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+00:10:15 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:137:5: warning: implicit declaration of function 'before_and_after' [-Wimplicit-function-declaration]
+  137 |     before_and_after();
+      |     ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:138:5: warning: implicit declaration of function 'PID' [-Wimplicit-function-declaration]
+  138 |     PID(MotorSetDuty*1.2, Answer);
+      |     ^~~
+../Core/Src/main.c:128:12: warning: unused variable 'drive' [-Wunused-variable]
+  128 |    int32_t drive = MotorSetDuty * 10;
+      |            ^~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:432:6: warning: conflicting types for 'before_and_after'
+  432 | void before_and_after()
+      |      ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:137:5: note: previous implicit declaration of 'before_and_after' was here
+  137 |     before_and_after();
+      |     ^~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:435:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  435 |  float sub_ans;
+      |        ^~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:456:6: warning: conflicting types for 'PID'
+  456 | void PID(float setpoint, float encoder){
+      |      ^~~
+../Core/Src/main.c:138:5: note: previous implicit declaration of 'PID' was here
+  138 |     PID(MotorSetDuty*1.2, Answer);
+      |     ^~~
+../Core/Src/main.c: In function 'PID':
+../Core/Src/main.c:470:2: warning: implicit declaration of function 'motor' [-Wimplicit-function-declaration]
+  470 |  motor(real_PI,5);
+      |  ^~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:474:6: warning: conflicting types for 'motor'
+  474 | void motor(double volt, double maxvolt){
+      |      ^~~~~
+../Core/Src/main.c:470:2: note: previous implicit declaration of 'motor' was here
+  470 |  motor(real_PI,5);
+      |  ^~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  19604	     24	   2080	  21708	   54cc	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+00:11:37 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:138:5: warning: implicit declaration of function 'before_and_after' [-Wimplicit-function-declaration]
+  138 |     before_and_after();
+      |     ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:139:5: warning: implicit declaration of function 'PID' [-Wimplicit-function-declaration]
+  139 |     PID(MotorSetDuty*1.2, Answer);
+      |     ^~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:433:6: warning: conflicting types for 'before_and_after'
+  433 | void before_and_after()
+      |      ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:138:5: note: previous implicit declaration of 'before_and_after' was here
+  138 |     before_and_after();
+      |     ^~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:436:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  436 |  float sub_ans;
+      |        ^~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:457:6: warning: conflicting types for 'PID'
+  457 | void PID(float setpoint, float encoder){
+      |      ^~~
+../Core/Src/main.c:139:5: note: previous implicit declaration of 'PID' was here
+  139 |     PID(MotorSetDuty*1.2, Answer);
+      |     ^~~
+../Core/Src/main.c: In function 'PID':
+../Core/Src/main.c:471:2: warning: implicit declaration of function 'motor' [-Wimplicit-function-declaration]
+  471 |  motor(real_PI,5);
+      |  ^~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:475:6: warning: conflicting types for 'motor'
+  475 | void motor(double volt, double maxvolt){
+      |      ^~~~~
+../Core/Src/main.c:471:2: note: previous implicit declaration of 'motor' was here
+  471 |  motor(real_PI,5);
+      |  ^~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  19604	     24	   2088	  21716	   54d4	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+00:14:40 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:437:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  437 |  float sub_ans;
+      |        ^~~~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  19608	     24	   2088	  21720	   54d8	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+00:15:53 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:437:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  437 |  float sub_ans;
+      |        ^~~~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  19608	     24	   2088	  21720	   54d8	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+00:17:28 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:437:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  437 |  float sub_ans;
+      |        ^~~~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  19608	     24	   2088	  21720	   54d8	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+00:18:13 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:438:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  438 |  float sub_ans;
+      |        ^~~~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  19620	     24	   2088	  21732	   54e4	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+00:20:58 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:441:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  441 |  float sub_ans;
+      |        ^~~~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  19620	     24	   2088	  21732	   54e4	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+00:23:16 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:64:13: error: both 'long' and 'float' in declaration specifiers
+   64 | static long float cumError;
+      |             ^~~~~
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:442:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  442 |  float sub_ans;
+      |        ^~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+00:23:34 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:442:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  442 |  float sub_ans;
+      |        ^~~~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  19664	     24	   2096	  21784	   5518	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
