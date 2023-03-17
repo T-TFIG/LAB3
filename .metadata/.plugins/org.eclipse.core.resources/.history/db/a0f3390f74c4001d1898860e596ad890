@@ -446,7 +446,7 @@ float IC_Calc_Period()
 	uint32_t i = (lastValidDMAPointer + IC_BUFFER_SIZE - 5) % IC_BUFFER_SIZE;
 
 	int32_t sumdiff = 0;
-	double milli,degree_per_sec;
+
 
 	while(i != lastValidDMAPointer){
 		uint32_t firstCapture = Input_A[i];
@@ -456,13 +456,9 @@ float IC_Calc_Period()
 		i = (i+1) % IC_BUFFER_SIZE;
 	}
 	milli = (sumdiff / 5.0)/100000;
-	if(milli == 0)
-	{
-		return 0;
-	}else{
-		degree_per_sec = 30 / milli;
-		return (degree_per_sec / 64);
-	}
+	degree_per_sec = 30 / milli;
+
+	return (degree_per_sec / 64);
 
 
 }

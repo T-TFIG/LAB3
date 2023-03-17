@@ -146,7 +146,7 @@ int main(void)
 		  averageRisingedgePeriod = IC_Calc_Period();
 
 		  before_and_after();
-		  PID(MotorSetDuty*1.2, IC_Calc_Period());
+		  PID(MotorSetDuty*1.2, Answer);
 	  }
   }
   /* USER CODE END 3 */
@@ -446,8 +446,6 @@ float IC_Calc_Period()
 	uint32_t i = (lastValidDMAPointer + IC_BUFFER_SIZE - 5) % IC_BUFFER_SIZE;
 
 	int32_t sumdiff = 0;
-	double milli,degree_per_sec;
-
 	while(i != lastValidDMAPointer){
 		uint32_t firstCapture = Input_A[i];
 
@@ -455,15 +453,7 @@ float IC_Calc_Period()
 		sumdiff += NextCapture - firstCapture;
 		i = (i+1) % IC_BUFFER_SIZE;
 	}
-	milli = (sumdiff / 5.0)/100000;
-	if(milli == 0)
-	{
-		return 0;
-	}else{
-		degree_per_sec = 30 / milli;
-		return (degree_per_sec / 64);
-	}
-
+	return sumdiff / 5.0;
 
 }
 
