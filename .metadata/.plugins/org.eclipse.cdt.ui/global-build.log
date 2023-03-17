@@ -1574,3 +1574,364 @@ Finished building: default.size.stdout
  
 Finished building: LAB3.list
  
+09:23:02 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:442:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  442 |  float sub_ans;
+      |        ^~~~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  19704	     24	   2096	  21824	   5540	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+09:24:34 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:442:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  442 |  float sub_ans;
+      |        ^~~~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  19704	     24	   2096	  21824	   5540	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+09:25:36 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:442:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  442 |  float sub_ans;
+      |        ^~~~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  19472	     24	   2096	  21592	   5458	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+09:26:27 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19472	     24	   2096	  21592	   5458	LAB3.elf
+Finished building: default.size.stdout
+ 
+09:27:24 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:445:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  445 |  float sub_ans;
+      |        ^~~~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  19488	     24	   2096	  21608	   5468	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+09:33:01 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:445:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  445 |  float sub_ans;
+      |        ^~~~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  19720	     24	   2096	  21840	   5550	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+09:33:55 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19720	     24	   2096	  21840	   5550	LAB3.elf
+Finished building: default.size.stdout
+ 
+09:37:47 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19720	     24	   2096	  21840	   5550	LAB3.elf
+Finished building: default.size.stdout
+ 
+09:39:43 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19720	     24	   2096	  21840	   5550	LAB3.elf
+Finished building: default.size.stdout
+ 
+09:40:16 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:3: error: 'INPUT_A' undeclared (first use in this function)
+  130 |   INPUT_A = 0;
+      |   ^~~~~~~
+../Core/Src/main.c:130:3: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:447:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  447 |  float sub_ans;
+      |        ^~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+09:40:31 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:3: error: 'INPUT_A' undeclared (first use in this function)
+  130 |   INPUT_A = [0];
+      |   ^~~~~~~
+../Core/Src/main.c:130:3: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:130:13: error: expected expression before '[' token
+  130 |   INPUT_A = [0];
+      |             ^
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:447:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  447 |  float sub_ans;
+      |        ^~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+09:40:57 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:11: error: assignment to expression with array type
+  130 |   Input_A = 0;
+      |           ^
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:447:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  447 |  float sub_ans;
+      |        ^~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+09:41:16 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:13: error: expected expression before '[' token
+  130 |   Input_A = [0];
+      |             ^
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:447:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  447 |  float sub_ans;
+      |        ^~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+09:41:59 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:13: error: expected expression before '{' token
+  130 |   Input_A = {0};
+      |             ^
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:447:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  447 |  float sub_ans;
+      |        ^~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+09:42:16 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:29: error: expected expression before '{' token
+  130 |   Input_A[IC_BUFFER_SIZE] = {0};
+      |                             ^
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:447:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  447 |  float sub_ans;
+      |        ^~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+09:43:22 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:17: error: expected expression before '{' token
+  130 |   Input_A[20] = {0};
+      |                 ^
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:447:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  447 |  float sub_ans;
+      |        ^~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+09:45:00 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:3: warning: implicit declaration of function 'clear' [-Wimplicit-function-declaration]
+  130 |   clear();
+      |   ^~~~~
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:447:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  447 |  float sub_ans;
+      |        ^~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:504:6: warning: conflicting types for 'clear'
+  504 | void clear(){
+      |      ^~~~~
+../Core/Src/main.c:130:3: note: previous implicit declaration of 'clear' was here
+  130 |   clear();
+      |   ^~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  19772	     24	   2096	  21892	   5584	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+09:47:24 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19772	     24	   2096	  21892	   5584	LAB3.elf
+Finished building: default.size.stdout
+ 
+09:48:30 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:120:47: error: 'Input_B' undeclared (first use in this function); did you mean 'Input_A'?
+  120 |   HAL_TIM_IC_Start_DMA(&htim2, TIM_CHANNEL_2, Input_B, IC_BUFFER_SIZE);
+      |                                               ^~~~~~~
+      |                                               Input_A
+../Core/Src/main.c:120:47: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:129:3: warning: implicit declaration of function 'clear' [-Wimplicit-function-declaration]
+  129 |   clear();
+      |   ^~~~~
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:446:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  446 |  float sub_ans;
+      |        ^~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:503:6: warning: conflicting types for 'clear'
+  503 | void clear(){
+      |      ^~~~~
+../Core/Src/main.c:129:3: note: previous implicit declaration of 'clear' was here
+  129 |   clear();
+      |   ^~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+09:48:42 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:129:3: warning: implicit declaration of function 'clear' [-Wimplicit-function-declaration]
+  129 |   clear();
+      |   ^~~~~
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:446:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  446 |  float sub_ans;
+      |        ^~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:503:6: warning: conflicting types for 'clear'
+  503 | void clear(){
+      |      ^~~~~
+../Core/Src/main.c:129:3: note: previous implicit declaration of 'clear' was here
+  129 |   clear();
+      |   ^~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  19756	     24	   2016	  21796	   5524	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+09:50:42 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:129:3: warning: implicit declaration of function 'clear' [-Wimplicit-function-declaration]
+  129 |   clear();
+      |   ^~~~~
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:446:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  446 |  float sub_ans;
+      |        ^~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:507:6: warning: conflicting types for 'clear'
+  507 | void clear(){
+      |      ^~~~~
+../Core/Src/main.c:129:3: note: previous implicit declaration of 'clear' was here
+  129 |   clear();
+      |   ^~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  19780	     24	   2016	  21820	   553c	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+09:52:20 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19780	     24	   2016	  21820	   553c	LAB3.elf
+Finished building: default.size.stdout
+ 
+09:53:45 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19780	     24	   2016	  21820	   553c	LAB3.elf
+Finished building: default.size.stdout
+ 
+09:54:37 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19780	     24	   2016	  21820	   553c	LAB3.elf
+Finished building: default.size.stdout
+ 
+09:55:34 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19780	     24	   2016	  21820	   553c	LAB3.elf
+Finished building: default.size.stdout
+ 

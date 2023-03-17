@@ -446,13 +446,13 @@ void before_and_after()
 	float sub_ans;
 	for(int i = 0; i <= 5; i++){
 		if(__HAL_DMA_GET_COUNTER((htim2.hdma[1])) - i < 0){
-			Compare += ((Input_A[__HAL_DMA_GET_COUNTER((htim2.hdma[1])) - i] - Input_A[20 - __HAL_DMA_GET_COUNTER((htim2.hdma[1])) - (i+1)])) / 100000;
+				Compare += ((Input_A[__HAL_DMA_GET_COUNTER((htim2.hdma[1])) - i] - Input_A[20 - __HAL_DMA_GET_COUNTER((htim2.hdma[1])) - (i+1)])) / 100000;
 		}
 
 		else{
-			before = Input_A[__HAL_DMA_GET_COUNTER(htim2.hdma[1])];
-			after = Input_A[__HAL_DMA_GET_COUNTER((htim2.hdma[1])) - 1];
-			Compare += (Input_A[__HAL_DMA_GET_COUNTER(htim2.hdma[1])- i] - Input_A[__HAL_DMA_GET_COUNTER((htim2.hdma[1])) - (i+1)]);
+				before = Input_A[__HAL_DMA_GET_COUNTER(htim2.hdma[1])];
+				after = Input_A[__HAL_DMA_GET_COUNTER((htim2.hdma[1])) - 1];
+				Compare += (Input_A[__HAL_DMA_GET_COUNTER(htim2.hdma[1])- i] - Input_A[__HAL_DMA_GET_COUNTER((htim2.hdma[1])) - (i+1)]);
 
 		}
 	}

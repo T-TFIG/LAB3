@@ -446,13 +446,13 @@ void before_and_after()
 	float sub_ans;
 	for(int i = 0; i <= 5; i++){
 		if(__HAL_DMA_GET_COUNTER((htim2.hdma[1])) - i < 0){
-			Compare += ((Input_A[__HAL_DMA_GET_COUNTER((htim2.hdma[1])) - i] - Input_A[20 - __HAL_DMA_GET_COUNTER((htim2.hdma[1])) - (i+1)])) / 100000;
+				Compare += ((Input_A[__HAL_DMA_GET_COUNTER((htim2.hdma[1])) - i] - Input_A[20 - __HAL_DMA_GET_COUNTER((htim2.hdma[1])) - (i+1)])) / 100000;
 		}
 
 		else{
-			before = Input_A[__HAL_DMA_GET_COUNTER(htim2.hdma[1])];
-			after = Input_A[__HAL_DMA_GET_COUNTER((htim2.hdma[1])) - 1];
-			Compare += (Input_A[__HAL_DMA_GET_COUNTER(htim2.hdma[1])- i] - Input_A[__HAL_DMA_GET_COUNTER((htim2.hdma[1])) - (i+1)]);
+				before = Input_A[__HAL_DMA_GET_COUNTER(htim2.hdma[1])];
+				after = Input_A[__HAL_DMA_GET_COUNTER((htim2.hdma[1])) - 1];
+				Compare += (Input_A[__HAL_DMA_GET_COUNTER(htim2.hdma[1])- i] - Input_A[__HAL_DMA_GET_COUNTER((htim2.hdma[1])) - (i+1)]);
 
 		}
 	}
@@ -460,10 +460,9 @@ void before_and_after()
 	divide = Compare / 100000;
 	if(divide == 0){
 		Answer = 0;
-	}else{
-		degree_per_sec = 30 / divide; //30 = degree from 12 ppr
-		Answer = (degree_per_sec / 64); //RPM
 	}
+	degree_per_sec = 30 / divide; //30 = degree from 12 ppr
+	Answer = (degree_per_sec / 64); //RPM
 	Compare = 0;
 
 }

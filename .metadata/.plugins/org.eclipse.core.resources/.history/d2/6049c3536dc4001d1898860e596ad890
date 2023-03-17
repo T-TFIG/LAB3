@@ -48,6 +48,7 @@ UART_HandleTypeDef huart2;
 /* USER CODE BEGIN PV */
 
 uint32_t Input_A[IC_BUFFER_SIZE];
+uint32_t Input_B[IC_BUFFER_SIZE];
 float averageRisingedgePeriod;
 int32_t MotorSetDuty = 10; // [(-100) - (100)]%
 uint32_t AVG = 0;
@@ -117,7 +118,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
   HAL_TIM_Base_Start(&htim2);
   HAL_TIM_IC_Start_DMA(&htim2, TIM_CHANNEL_1, Input_A, IC_BUFFER_SIZE);
-//  HAL_TIM_IC_Start_DMA(&htim2, TIM_CHANNEL_2, Input_B, IC_BUFFER_SIZE);
+  HAL_TIM_IC_Start_DMA(&htim2, TIM_CHANNEL_2, Input_B, IC_BUFFER_SIZE);
 
   HAL_TIM_Base_Start(&htim1);
   HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
@@ -126,7 +127,7 @@ int main(void)
   __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,0);
   __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2,0);
 
-  clear();
+  Input_A = {0};
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -446,24 +447,20 @@ void before_and_after()
 	float sub_ans;
 	for(int i = 0; i <= 5; i++){
 		if(__HAL_DMA_GET_COUNTER((htim2.hdma[1])) - i < 0){
-			Compare += ((Input_A[__HAL_DMA_GET_COUNTER((htim2.hdma[1])) - i] - Input_A[20 - __HAL_DMA_GET_COUNTER((htim2.hdma[1])) - (i+1)])) / 100000;
+				Compare += ((Input_A[__HAL_DMA_GET_COUNTER((htim2.hdma[1])) - i] - Input_A[20 - __HAL_DMA_GET_COUNTER((htim2.hdma[1])) - (i+1)])) / 100000;
 		}
 
 		else{
-			before = Input_A[__HAL_DMA_GET_COUNTER(htim2.hdma[1])];
-			after = Input_A[__HAL_DMA_GET_COUNTER((htim2.hdma[1])) - 1];
-			Compare += (Input_A[__HAL_DMA_GET_COUNTER(htim2.hdma[1])- i] - Input_A[__HAL_DMA_GET_COUNTER((htim2.hdma[1])) - (i+1)]);
+				before = Input_A[__HAL_DMA_GET_COUNTER(htim2.hdma[1])];
+				after = Input_A[__HAL_DMA_GET_COUNTER((htim2.hdma[1])) - 1];
+				Compare += (Input_A[__HAL_DMA_GET_COUNTER(htim2.hdma[1])- i] - Input_A[__HAL_DMA_GET_COUNTER((htim2.hdma[1])) - (i+1)]);
 
 		}
 	}
 	Compare /= 5;
 	divide = Compare / 100000;
-	if(divide == 0){
-		Answer = 0;
-	}else{
-		degree_per_sec = 30 / divide; //30 = degree from 12 ppr
-		Answer = (degree_per_sec / 64); //RPM
-	}
+	degree_per_sec = 30 / divide; //30 = degree from 12 ppr
+	Answer = (degree_per_sec / 64); //RPM
 	Compare = 0;
 
 }
@@ -504,12 +501,7 @@ void PID(float setpoint, float encoder){
 
 }
 
-void clear(){
-	for(int i = 0; i < 20; i++)
-	  {
-		  Input_A[i] = 0;
-	  }
-}
+
 
 /* USER CODE END 4 */
 
