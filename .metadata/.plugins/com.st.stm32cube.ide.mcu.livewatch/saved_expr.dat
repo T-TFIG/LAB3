@@ -1,9 +1,13 @@
 MotorSetDuty
 Input_A
-Input_B
 drive
 Answer
 Compare
 before
 after
 divide
+real_PI
+error
+cumError
+debug
+averageRisingedgePeriod

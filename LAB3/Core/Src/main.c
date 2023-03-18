@@ -50,6 +50,7 @@ UART_HandleTypeDef huart2;
 uint32_t Input_A[IC_BUFFER_SIZE];
 float averageRisingedgePeriod;
 int32_t MotorSetDuty = 10; // [(-100) - (100)]%
+int32_t MotorSetRPM = 0;
 uint32_t AVG = 0;
 float Avg_vel = 0.0;
 float Answer;
@@ -62,6 +63,7 @@ float drive;
 long double error;
 static float cumError;
 float debug;
+uint8_t MotorControlEnable = 1;
 
 /* USER CODE END PV */
 
@@ -127,6 +129,7 @@ int main(void)
   __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2,0);
 
   clear();
+  static double last = 0;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -143,11 +146,22 @@ int main(void)
 	  if(HAL_GetTick()>= timestamp)
 	  {
 		  timestamp = HAL_GetTick() + 10;
-		  averageRisingedgePeriod = IC_Calc_Period();
 
-		  before_and_after();
-		  PID(MotorSetDuty*1.2, IC_Calc_Period());
+	  	  averageRisingedgePeriod = IC_Calc_Period();
+	  	  if(last != 0){
+	  		  if(averageRisingedgePeriod - last >= 15){
+	  			averageRisingedgePeriod = last;
+	  		  }
+	  	  }
+//		  before_and_after();
+		  if(MotorControlEnable == 1){
+			  PID(MotorSetRPM, averageRisingedgePeriod);
+		  }else if(MotorControlEnable == 0){
+			  motor((3.3*MotorSetDuty)/100, 3.3);
+		  }
+
 	  }
+	  last = averageRisingedgePeriod;
   }
   /* USER CODE END 3 */
 }
@@ -455,13 +469,13 @@ float IC_Calc_Period()
 		sumdiff += NextCapture - firstCapture;
 		i = (i+1) % IC_BUFFER_SIZE;
 	}
-	milli = (sumdiff / 5.0)/100000;
-	if(milli == 0)
+	milli = (sumdiff / 5.0)/1000000;
+	if(milli == 0.0)
 	{
 		return 0;
 	}else{
-		degree_per_sec = 30 / milli;
-		return (degree_per_sec / 64);
+		degree_per_sec = 30 * 0.1667 / milli; // 0.1667 convert degree/s to RPM
+		return (degree_per_sec / 64) * 0.46653;
 	}
 
 
@@ -494,6 +508,35 @@ void before_and_after()
 
 }
 
+void PID(float setpoint, float encoder){
+	// P and I no D
+
+
+	float Kp = 0.1;
+	float Ki = 0.5;
+
+
+	error = setpoint - encoder; //rpm
+
+	debug = error * 0.01;
+
+	cumError = cumError + (error * 0.01);
+	if(cumError >= 330){
+		cumError = 330;
+	}
+
+	real_PI = 0.0785*(Kp * error + Ki * cumError);
+
+	if(real_PI >= 3.3){
+		real_PI = 3.3;
+	}else if(real_PI <= 0){
+		real_PI = 0;
+	}
+
+	motor(real_PI,3.3);
+
+}
+
 void motor(double volt, double maxvolt){
 
 	drive = (volt / maxvolt) * 1000;
@@ -510,24 +553,6 @@ void motor(double volt, double maxvolt){
 		__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,0);
 		__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2,0);
 	}
-}
-
-void PID(float setpoint, float encoder){
-	// P and I no D
-
-
-	float Kp = 0.05;
-	float Ki = 0.01;
-
-
-	error = setpoint - encoder;
-	debug = error * 0.01;
-
-	cumError = cumError + (error * 0.01);
-
-	real_PI = (Kp * error + Ki * cumError);
-	motor(real_PI,3.3);
-
 }
 
 void clear(){

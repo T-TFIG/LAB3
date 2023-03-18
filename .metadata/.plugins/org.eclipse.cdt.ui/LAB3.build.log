@@ -1,32 +1,10 @@
-10:58:23 **** Incremental Build of configuration Debug for project LAB3 ****
+21:12:05 **** Incremental Build of configuration Debug for project LAB3 ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:129:3: warning: implicit declaration of function 'clear' [-Wimplicit-function-declaration]
-  129 |   clear();
-      |   ^~~~~
-../Core/Src/main.c: In function 'before_and_after':
-../Core/Src/main.c:473:8: warning: unused variable 'sub_ans' [-Wunused-variable]
-  473 |  float sub_ans;
-      |        ^~~~~~~
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:533:6: warning: conflicting types for 'clear'
-  533 | void clear(){
-      |      ^~~~~
-../Core/Src/main.c:129:3: note: previous implicit declaration of 'clear' was here
-  129 |   clear();
-      |   ^~~~~
-arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: LAB3.elf
- 
 arm-none-eabi-size   LAB3.elf 
-arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
    text	   data	    bss	    dec	    hex	filename
-  20228	     24	   2016	  22268	   56fc	LAB3.elf
+  20280	     28	   2016	  22324	   5734	LAB3.elf
 Finished building: default.size.stdout
  
-Finished building: LAB3.list
- 
 
-10:58:24 Build Finished. 0 errors, 3 warnings. (took 1s.716ms)
+21:12:06 Build Finished. 0 errors, 0 warnings. (took 1s.84ms)
 

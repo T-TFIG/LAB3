@@ -2108,3 +2108,1213 @@ Finished building: default.size.stdout
  
 Finished building: LAB3.list
  
+16:26:30 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:3: warning: implicit declaration of function 'clear' [-Wimplicit-function-declaration]
+  130 |   clear();
+      |   ^~~~~
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:478:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  478 |  float sub_ans;
+      |        ^~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:544:6: warning: conflicting types for 'clear'
+  544 | void clear(){
+      |      ^~~~~
+../Core/Src/main.c:130:3: note: previous implicit declaration of 'clear' was here
+  130 |   clear();
+      |   ^~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  20412	     28	   2016	  22456	   57b8	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+16:34:40 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:3: warning: implicit declaration of function 'clear' [-Wimplicit-function-declaration]
+  130 |   clear();
+      |   ^~~~~
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:478:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  478 |  float sub_ans;
+      |        ^~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:547:6: warning: conflicting types for 'clear'
+  547 | void clear(){
+      |      ^~~~~
+../Core/Src/main.c:130:3: note: previous implicit declaration of 'clear' was here
+  130 |   clear();
+      |   ^~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  20444	     28	   2016	  22488	   57d8	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+16:43:35 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:3: warning: implicit declaration of function 'clear' [-Wimplicit-function-declaration]
+  130 |   clear();
+      |   ^~~~~
+../Core/Src/main.c: In function 'IC_Calc_Period':
+../Core/Src/main.c:454:15: warning: unused variable 'degree_per_sec' [-Wunused-variable]
+  454 |  double milli,degree_per_sec;
+      |               ^~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:478:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  478 |  float sub_ans;
+      |        ^~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:547:6: warning: conflicting types for 'clear'
+  547 | void clear(){
+      |      ^~~~~
+../Core/Src/main.c:130:3: note: previous implicit declaration of 'clear' was here
+  130 |   clear();
+      |   ^~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  20428	     28	   2016	  22472	   57c8	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+16:45:03 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:3: warning: implicit declaration of function 'clear' [-Wimplicit-function-declaration]
+  130 |   clear();
+      |   ^~~~~
+../Core/Src/main.c: In function 'IC_Calc_Period':
+../Core/Src/main.c:454:15: warning: unused variable 'degree_per_sec' [-Wunused-variable]
+  454 |  double milli,degree_per_sec;
+      |               ^~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:482:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  482 |  float sub_ans;
+      |        ^~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:551:6: warning: conflicting types for 'clear'
+  551 | void clear(){
+      |      ^~~~~
+../Core/Src/main.c:130:3: note: previous implicit declaration of 'clear' was here
+  130 |   clear();
+      |   ^~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  20412	     28	   2016	  22456	   57b8	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+16:48:41 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:3: warning: implicit declaration of function 'clear' [-Wimplicit-function-declaration]
+  130 |   clear();
+      |   ^~~~~
+../Core/Src/main.c: In function 'IC_Calc_Period':
+../Core/Src/main.c:454:15: warning: unused variable 'degree_per_sec' [-Wunused-variable]
+  454 |  double milli,degree_per_sec;
+      |               ^~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:478:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  478 |  float sub_ans;
+      |        ^~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:547:6: warning: conflicting types for 'clear'
+  547 | void clear(){
+      |      ^~~~~
+../Core/Src/main.c:130:3: note: previous implicit declaration of 'clear' was here
+  130 |   clear();
+      |   ^~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  20420	     28	   2016	  22464	   57c0	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+16:50:44 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:3: warning: implicit declaration of function 'clear' [-Wimplicit-function-declaration]
+  130 |   clear();
+      |   ^~~~~
+../Core/Src/main.c: In function 'IC_Calc_Period':
+../Core/Src/main.c:454:15: warning: unused variable 'degree_per_sec' [-Wunused-variable]
+  454 |  double milli,degree_per_sec;
+      |               ^~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:478:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  478 |  float sub_ans;
+      |        ^~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:547:6: warning: conflicting types for 'clear'
+  547 | void clear(){
+      |      ^~~~~
+../Core/Src/main.c:130:3: note: previous implicit declaration of 'clear' was here
+  130 |   clear();
+      |   ^~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  20420	     28	   2016	  22464	   57c0	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+16:53:13 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:3: warning: implicit declaration of function 'clear' [-Wimplicit-function-declaration]
+  130 |   clear();
+      |   ^~~~~
+../Core/Src/main.c: In function 'IC_Calc_Period':
+../Core/Src/main.c:454:15: warning: unused variable 'degree_per_sec' [-Wunused-variable]
+  454 |  double milli,degree_per_sec;
+      |               ^~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:478:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  478 |  float sub_ans;
+      |        ^~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:547:6: warning: conflicting types for 'clear'
+  547 | void clear(){
+      |      ^~~~~
+../Core/Src/main.c:130:3: note: previous implicit declaration of 'clear' was here
+  130 |   clear();
+      |   ^~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  20124	     28	   1992	  22144	   5680	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+16:58:01 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:3: warning: implicit declaration of function 'clear' [-Wimplicit-function-declaration]
+  130 |   clear();
+      |   ^~~~~
+../Core/Src/main.c: In function 'IC_Calc_Period':
+../Core/Src/main.c:454:15: warning: unused variable 'degree_per_sec' [-Wunused-variable]
+  454 |  double milli,degree_per_sec;
+      |               ^~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:478:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  478 |  float sub_ans;
+      |        ^~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:547:6: warning: conflicting types for 'clear'
+  547 | void clear(){
+      |      ^~~~~
+../Core/Src/main.c:130:3: note: previous implicit declaration of 'clear' was here
+  130 |   clear();
+      |   ^~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  20124	     28	   1992	  22144	   5680	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+17:12:26 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:3: warning: implicit declaration of function 'clear' [-Wimplicit-function-declaration]
+  130 |   clear();
+      |   ^~~~~
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:478:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  478 |  float sub_ans;
+      |        ^~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:547:6: warning: conflicting types for 'clear'
+  547 | void clear(){
+      |      ^~~~~
+../Core/Src/main.c:130:3: note: previous implicit declaration of 'clear' was here
+  130 |   clear();
+      |   ^~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  20148	     28	   1992	  22168	   5698	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+17:21:38 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:3: warning: implicit declaration of function 'clear' [-Wimplicit-function-declaration]
+  130 |   clear();
+      |   ^~~~~
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:478:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  478 |  float sub_ans;
+      |        ^~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:547:6: warning: conflicting types for 'clear'
+  547 | void clear(){
+      |      ^~~~~
+../Core/Src/main.c:130:3: note: previous implicit declaration of 'clear' was here
+  130 |   clear();
+      |   ^~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  20156	     28	   1992	  22176	   56a0	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+17:23:05 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:3: warning: implicit declaration of function 'clear' [-Wimplicit-function-declaration]
+  130 |   clear();
+      |   ^~~~~
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:478:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  478 |  float sub_ans;
+      |        ^~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:547:6: warning: conflicting types for 'clear'
+  547 | void clear(){
+      |      ^~~~~
+../Core/Src/main.c:130:3: note: previous implicit declaration of 'clear' was here
+  130 |   clear();
+      |   ^~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  20148	     28	   1992	  22168	   5698	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+17:24:15 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:3: warning: implicit declaration of function 'clear' [-Wimplicit-function-declaration]
+  130 |   clear();
+      |   ^~~~~
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:478:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  478 |  float sub_ans;
+      |        ^~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:547:6: warning: conflicting types for 'clear'
+  547 | void clear(){
+      |      ^~~~~
+../Core/Src/main.c:130:3: note: previous implicit declaration of 'clear' was here
+  130 |   clear();
+      |   ^~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  20156	     28	   1992	  22176	   56a0	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+17:25:09 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20156	     28	   1992	  22176	   56a0	LAB3.elf
+Finished building: default.size.stdout
+ 
+17:28:59 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:3: warning: implicit declaration of function 'clear' [-Wimplicit-function-declaration]
+  130 |   clear();
+      |   ^~~~~
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:478:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  478 |  float sub_ans;
+      |        ^~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:546:6: warning: conflicting types for 'clear'
+  546 | void clear(){
+      |      ^~~~~
+../Core/Src/main.c:130:3: note: previous implicit declaration of 'clear' was here
+  130 |   clear();
+      |   ^~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  20156	     28	   1992	  22176	   56a0	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+17:30:15 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:3: warning: implicit declaration of function 'clear' [-Wimplicit-function-declaration]
+  130 |   clear();
+      |   ^~~~~
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:478:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  478 |  float sub_ans;
+      |        ^~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:547:6: warning: conflicting types for 'clear'
+  547 | void clear(){
+      |      ^~~~~
+../Core/Src/main.c:130:3: note: previous implicit declaration of 'clear' was here
+  130 |   clear();
+      |   ^~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  20156	     28	   1992	  22176	   56a0	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+17:32:06 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:3: warning: implicit declaration of function 'clear' [-Wimplicit-function-declaration]
+  130 |   clear();
+      |   ^~~~~
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:478:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  478 |  float sub_ans;
+      |        ^~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:547:6: warning: conflicting types for 'clear'
+  547 | void clear(){
+      |      ^~~~~
+../Core/Src/main.c:130:3: note: previous implicit declaration of 'clear' was here
+  130 |   clear();
+      |   ^~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  20156	     28	   1992	  22176	   56a0	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+17:32:58 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:3: warning: implicit declaration of function 'clear' [-Wimplicit-function-declaration]
+  130 |   clear();
+      |   ^~~~~
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:478:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  478 |  float sub_ans;
+      |        ^~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:547:6: warning: conflicting types for 'clear'
+  547 | void clear(){
+      |      ^~~~~
+../Core/Src/main.c:130:3: note: previous implicit declaration of 'clear' was here
+  130 |   clear();
+      |   ^~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  20164	     28	   1992	  22184	   56a8	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+17:34:48 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:3: warning: implicit declaration of function 'clear' [-Wimplicit-function-declaration]
+  130 |   clear();
+      |   ^~~~~
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:478:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  478 |  float sub_ans;
+      |        ^~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:547:6: warning: conflicting types for 'clear'
+  547 | void clear(){
+      |      ^~~~~
+../Core/Src/main.c:130:3: note: previous implicit declaration of 'clear' was here
+  130 |   clear();
+      |   ^~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  20156	     28	   1992	  22176	   56a0	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+17:37:02 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:3: warning: implicit declaration of function 'clear' [-Wimplicit-function-declaration]
+  130 |   clear();
+      |   ^~~~~
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:478:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  478 |  float sub_ans;
+      |        ^~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:547:6: warning: conflicting types for 'clear'
+  547 | void clear(){
+      |      ^~~~~
+../Core/Src/main.c:130:3: note: previous implicit declaration of 'clear' was here
+  130 |   clear();
+      |   ^~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  20164	     28	   1992	  22184	   56a8	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+17:38:09 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20164	     28	   1992	  22184	   56a8	LAB3.elf
+Finished building: default.size.stdout
+ 
+17:39:03 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20164	     28	   1992	  22184	   56a8	LAB3.elf
+Finished building: default.size.stdout
+ 
+19:14:22 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20164	     28	   1992	  22184	   56a8	LAB3.elf
+Finished building: default.size.stdout
+ 
+19:17:49 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:3: warning: implicit declaration of function 'clear' [-Wimplicit-function-declaration]
+  130 |   clear();
+      |   ^~~~~
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:478:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  478 |  float sub_ans;
+      |        ^~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:547:6: warning: conflicting types for 'clear'
+  547 | void clear(){
+      |      ^~~~~
+../Core/Src/main.c:130:3: note: previous implicit declaration of 'clear' was here
+  130 |   clear();
+      |   ^~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  20148	     28	   1992	  22168	   5698	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+19:18:06 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20148	     28	   1992	  22168	   5698	LAB3.elf
+Finished building: default.size.stdout
+ 
+19:22:22 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:3: warning: implicit declaration of function 'clear' [-Wimplicit-function-declaration]
+  130 |   clear();
+      |   ^~~~~
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:478:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  478 |  float sub_ans;
+      |        ^~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:547:6: warning: conflicting types for 'clear'
+  547 | void clear(){
+      |      ^~~~~
+../Core/Src/main.c:130:3: note: previous implicit declaration of 'clear' was here
+  130 |   clear();
+      |   ^~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  20156	     28	   1992	  22176	   56a0	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+19:24:33 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:3: warning: implicit declaration of function 'clear' [-Wimplicit-function-declaration]
+  130 |   clear();
+      |   ^~~~~
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:478:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  478 |  float sub_ans;
+      |        ^~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:547:6: warning: conflicting types for 'clear'
+  547 | void clear(){
+      |      ^~~~~
+../Core/Src/main.c:130:3: note: previous implicit declaration of 'clear' was here
+  130 |   clear();
+      |   ^~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  20164	     28	   1992	  22184	   56a8	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+19:30:14 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:3: warning: implicit declaration of function 'clear' [-Wimplicit-function-declaration]
+  130 |   clear();
+      |   ^~~~~
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:478:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  478 |  float sub_ans;
+      |        ^~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:547:6: warning: conflicting types for 'clear'
+  547 | void clear(){
+      |      ^~~~~
+../Core/Src/main.c:130:3: note: previous implicit declaration of 'clear' was here
+  130 |   clear();
+      |   ^~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  20164	     28	   1992	  22184	   56a8	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+19:30:52 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20164	     28	   1992	  22184	   56a8	LAB3.elf
+Finished building: default.size.stdout
+ 
+19:38:31 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:3: warning: implicit declaration of function 'clear' [-Wimplicit-function-declaration]
+  130 |   clear();
+      |   ^~~~~
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:478:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  478 |  float sub_ans;
+      |        ^~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:547:6: warning: conflicting types for 'clear'
+  547 | void clear(){
+      |      ^~~~~
+../Core/Src/main.c:130:3: note: previous implicit declaration of 'clear' was here
+  130 |   clear();
+      |   ^~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  20140	     28	   1992	  22160	   5690	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+19:39:23 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:3: warning: implicit declaration of function 'clear' [-Wimplicit-function-declaration]
+  130 |   clear();
+      |   ^~~~~
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:478:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  478 |  float sub_ans;
+      |        ^~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:547:6: warning: conflicting types for 'clear'
+  547 | void clear(){
+      |      ^~~~~
+../Core/Src/main.c:130:3: note: previous implicit declaration of 'clear' was here
+  130 |   clear();
+      |   ^~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  20148	     28	   1992	  22168	   5698	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+19:40:05 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:3: warning: implicit declaration of function 'clear' [-Wimplicit-function-declaration]
+  130 |   clear();
+      |   ^~~~~
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:478:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  478 |  float sub_ans;
+      |        ^~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:547:6: warning: conflicting types for 'clear'
+  547 | void clear(){
+      |      ^~~~~
+../Core/Src/main.c:130:3: note: previous implicit declaration of 'clear' was here
+  130 |   clear();
+      |   ^~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  20140	     28	   1992	  22160	   5690	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+19:42:36 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:3: warning: implicit declaration of function 'clear' [-Wimplicit-function-declaration]
+  130 |   clear();
+      |   ^~~~~
+../Core/Src/main.c:142:20: warning: unused variable 'timestamp' [-Wunused-variable]
+  142 |    static uint32_t timestamp = 0;
+      |                    ^~~~~~~~~
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:478:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  478 |  float sub_ans;
+      |        ^~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:547:6: warning: conflicting types for 'clear'
+  547 | void clear(){
+      |      ^~~~~
+../Core/Src/main.c:130:3: note: previous implicit declaration of 'clear' was here
+  130 |   clear();
+      |   ^~~~~
+../Core/Src/main.c:142:20: warning: 'timestamp' defined but not used [-Wunused-variable]
+  142 |    static uint32_t timestamp = 0;
+      |                    ^~~~~~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  20108	     28	   1992	  22128	   5670	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+19:47:58 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20108	     28	   1992	  22128	   5670	LAB3.elf
+Finished building: default.size.stdout
+ 
+19:53:50 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:3: warning: implicit declaration of function 'clear' [-Wimplicit-function-declaration]
+  130 |   clear();
+      |   ^~~~~
+../Core/Src/main.c:142:20: warning: unused variable 'timestamp' [-Wunused-variable]
+  142 |    static uint32_t timestamp = 0;
+      |                    ^~~~~~~~~
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:478:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  478 |  float sub_ans;
+      |        ^~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:547:6: warning: conflicting types for 'clear'
+  547 | void clear(){
+      |      ^~~~~
+../Core/Src/main.c:130:3: note: previous implicit declaration of 'clear' was here
+  130 |   clear();
+      |   ^~~~~
+../Core/Src/main.c:142:20: warning: 'timestamp' defined but not used [-Wunused-variable]
+  142 |    static uint32_t timestamp = 0;
+      |                    ^~~~~~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  20140	     28	   1992	  22160	   5690	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+19:55:24 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20140	     28	   1992	  22160	   5690	LAB3.elf
+Finished building: default.size.stdout
+ 
+20:18:37 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20140	     28	   1992	  22160	   5690	LAB3.elf
+Finished building: default.size.stdout
+ 
+20:25:54 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:3: warning: implicit declaration of function 'clear' [-Wimplicit-function-declaration]
+  130 |   clear();
+      |   ^~~~~
+../Core/Src/main.c:142:20: warning: unused variable 'timestamp' [-Wunused-variable]
+  142 |    static uint32_t timestamp = 0;
+      |                    ^~~~~~~~~
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:478:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  478 |  float sub_ans;
+      |        ^~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:547:6: warning: conflicting types for 'clear'
+  547 | void clear(){
+      |      ^~~~~
+../Core/Src/main.c:130:3: note: previous implicit declaration of 'clear' was here
+  130 |   clear();
+      |   ^~~~~
+../Core/Src/main.c:142:20: warning: 'timestamp' defined but not used [-Wunused-variable]
+  142 |    static uint32_t timestamp = 0;
+      |                    ^~~~~~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  20140	     28	   1992	  22160	   5690	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+20:33:44 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:3: warning: implicit declaration of function 'clear' [-Wimplicit-function-declaration]
+  130 |   clear();
+      |   ^~~~~
+../Core/Src/main.c:150:23: error: 'averageRisingPeriod' undeclared (first use in this function); did you mean 'averageRisingedgePeriod'?
+  150 |       if(last != 0 && averageRisingPeriod - last >= 5){
+      |                       ^~~~~~~~~~~~~~~~~~~
+      |                       averageRisingedgePeriod
+../Core/Src/main.c:150:23: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:143:20: warning: unused variable 'timestamp' [-Wunused-variable]
+  143 |    static uint32_t timestamp = 0;
+      |                    ^~~~~~~~~
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:484:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  484 |  float sub_ans;
+      |        ^~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:553:6: warning: conflicting types for 'clear'
+  553 | void clear(){
+      |      ^~~~~
+../Core/Src/main.c:130:3: note: previous implicit declaration of 'clear' was here
+  130 |   clear();
+      |   ^~~~~
+../Core/Src/main.c:143:20: warning: 'timestamp' defined but not used [-Wunused-variable]
+  143 |    static uint32_t timestamp = 0;
+      |                    ^~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+20:34:33 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:3: warning: implicit declaration of function 'clear' [-Wimplicit-function-declaration]
+  130 |   clear();
+      |   ^~~~~
+../Core/Src/main.c:151:11: error: 'averageRisingPeriod' undeclared (first use in this function); did you mean 'averageRisingedgePeriod'?
+  151 |        if(averageRisingPeriod - last >= 5){
+      |           ^~~~~~~~~~~~~~~~~~~
+      |           averageRisingedgePeriod
+../Core/Src/main.c:151:11: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:143:20: warning: unused variable 'timestamp' [-Wunused-variable]
+  143 |    static uint32_t timestamp = 0;
+      |                    ^~~~~~~~~
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:486:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  486 |  float sub_ans;
+      |        ^~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:555:6: warning: conflicting types for 'clear'
+  555 | void clear(){
+      |      ^~~~~
+../Core/Src/main.c:130:3: note: previous implicit declaration of 'clear' was here
+  130 |   clear();
+      |   ^~~~~
+../Core/Src/main.c:143:20: warning: 'timestamp' defined but not used [-Wunused-variable]
+  143 |    static uint32_t timestamp = 0;
+      |                    ^~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+20:35:00 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:3: warning: implicit declaration of function 'clear' [-Wimplicit-function-declaration]
+  130 |   clear();
+      |   ^~~~~
+../Core/Src/main.c:143:20: warning: unused variable 'timestamp' [-Wunused-variable]
+  143 |    static uint32_t timestamp = 0;
+      |                    ^~~~~~~~~
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:486:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  486 |  float sub_ans;
+      |        ^~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:555:6: warning: conflicting types for 'clear'
+  555 | void clear(){
+      |      ^~~~~
+../Core/Src/main.c:130:3: note: previous implicit declaration of 'clear' was here
+  130 |   clear();
+      |   ^~~~~
+../Core/Src/main.c:143:20: warning: 'timestamp' defined but not used [-Wunused-variable]
+  143 |    static uint32_t timestamp = 0;
+      |                    ^~~~~~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  20252	     28	   2000	  22280	   5708	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+20:39:49 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20252	     28	   2000	  22280	   5708	LAB3.elf
+Finished building: default.size.stdout
+ 
+20:41:08 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:3: warning: implicit declaration of function 'clear' [-Wimplicit-function-declaration]
+  130 |   clear();
+      |   ^~~~~
+../Core/Src/main.c:143:20: warning: unused variable 'timestamp' [-Wunused-variable]
+  143 |    static uint32_t timestamp = 0;
+      |                    ^~~~~~~~~
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:486:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  486 |  float sub_ans;
+      |        ^~~~~~~
+../Core/Src/main.c: In function 'PID':
+../Core/Src/main.c:515:8: warning: unused variable 'Ki' [-Wunused-variable]
+  515 |  float Ki = 0.1;
+      |        ^~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:555:6: warning: conflicting types for 'clear'
+  555 | void clear(){
+      |      ^~~~~
+../Core/Src/main.c:130:3: note: previous implicit declaration of 'clear' was here
+  130 |   clear();
+      |   ^~~~~
+../Core/Src/main.c:143:20: warning: 'timestamp' defined but not used [-Wunused-variable]
+  143 |    static uint32_t timestamp = 0;
+      |                    ^~~~~~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  20208	     28	   2000	  22236	   56dc	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+20:42:00 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20208	     28	   2000	  22236	   56dc	LAB3.elf
+Finished building: default.size.stdout
+ 
+20:55:35 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:3: warning: implicit declaration of function 'clear' [-Wimplicit-function-declaration]
+  130 |   clear();
+      |   ^~~~~
+../Core/Src/main.c:143:20: warning: unused variable 'timestamp' [-Wunused-variable]
+  143 |    static uint32_t timestamp = 0;
+      |                    ^~~~~~~~~
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:486:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  486 |  float sub_ans;
+      |        ^~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:557:6: warning: conflicting types for 'clear'
+  557 | void clear(){
+      |      ^~~~~
+../Core/Src/main.c:130:3: note: previous implicit declaration of 'clear' was here
+  130 |   clear();
+      |   ^~~~~
+../Core/Src/main.c:143:20: warning: 'timestamp' defined but not used [-Wunused-variable]
+  143 |    static uint32_t timestamp = 0;
+      |                    ^~~~~~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  20276	     28	   2000	  22304	   5720	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+20:56:10 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20276	     28	   2000	  22304	   5720	LAB3.elf
+Finished building: default.size.stdout
+ 
+21:04:14 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:3: warning: implicit declaration of function 'clear' [-Wimplicit-function-declaration]
+  130 |   clear();
+      |   ^~~~~
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:486:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  486 |  float sub_ans;
+      |        ^~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:557:6: warning: conflicting types for 'clear'
+  557 | void clear(){
+      |      ^~~~~
+../Core/Src/main.c:130:3: note: previous implicit declaration of 'clear' was here
+  130 |   clear();
+      |   ^~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  20312	     28	   2008	  22348	   574c	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+21:06:51 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:131:3: warning: implicit declaration of function 'clear' [-Wimplicit-function-declaration]
+  131 |   clear();
+      |   ^~~~~
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:487:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  487 |  float sub_ans;
+      |        ^~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:558:6: warning: conflicting types for 'clear'
+  558 | void clear(){
+      |      ^~~~~
+../Core/Src/main.c:131:3: note: previous implicit declaration of 'clear' was here
+  131 |   clear();
+      |   ^~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  20280	     28	   2016	  22324	   5734	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+21:08:23 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20280	     28	   2016	  22324	   5734	LAB3.elf
+Finished building: default.size.stdout
+ 
+21:08:48 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:131:3: warning: implicit declaration of function 'clear' [-Wimplicit-function-declaration]
+  131 |   clear();
+      |   ^~~~~
+../Core/Src/main.c: In function 'before_and_after':
+../Core/Src/main.c:487:8: warning: unused variable 'sub_ans' [-Wunused-variable]
+  487 |  float sub_ans;
+      |        ^~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:558:6: warning: conflicting types for 'clear'
+  558 | void clear(){
+      |      ^~~~~
+../Core/Src/main.c:131:3: note: previous implicit declaration of 'clear' was here
+  131 |   clear();
+      |   ^~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Github\LAB3\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  20280	     28	   2016	  22324	   5734	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+21:12:05 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20280	     28	   2016	  22324	   5734	LAB3.elf
+Finished building: default.size.stdout
+ 

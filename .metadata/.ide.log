@@ -2571,3 +2571,23 @@
 2566-03-16 15:49:30,301 [INFO] CADModel:113 - Register for checkConnection events
 2566-03-16 15:49:30,347 [INFO] OpenFileManager:327 - Restore cursor
 2566-03-16 23:19:09,862 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,501x222,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2566-03-18 17:38:20,561 [ERROR] ConfigurationRetriever:140 - IOException on connection: connect timed out
+2566-03-18 17:38:22,564 [ERROR] ConfigurationRetriever:140 - IOException on connection: connect timed out
+2566-03-18 17:38:24,571 [ERROR] ConfigurationRetriever:140 - IOException on connection: connect timed out
+2566-03-18 17:38:25,664 [INFO] JxBrowserEngine:114 - Initiate JxBrowser Engine with user profile folder
+2566-03-18 17:38:28,268 [INFO] WebAppUi:459 - Close the Jxbrowser engine manually
+2566-03-18 17:38:28,320 [INFO] WebAppUi:462 - Profiles folder deleted
+2566-03-18 17:38:29,590 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2566-03-18 17:38:43,959 [INFO] Activator:179 - 
+
+
+2566-03-18 17:38:43,960 [INFO] Activator:180 - !SESSION log4j initialized
+2566-03-18 17:38:49,880 [ERROR] ConfigurationRetriever:140 - IOException on connection: sw-center.st.com
+2566-03-18 17:38:49,882 [ERROR] ConfigurationRetriever:140 - IOException on connection: sw-center.st.com
+2566-03-18 17:38:49,883 [ERROR] ConfigurationRetriever:140 - IOException on connection: sw-center.st.com
+2566-03-18 17:39:04,661 [ERROR] ConfigurationRetriever:140 - IOException on connection: sw-center.st.com
+2566-03-18 17:39:04,661 [ERROR] ConfigurationRetriever:140 - IOException on connection: sw-center.st.com
+2566-03-18 17:39:04,662 [ERROR] ConfigurationRetriever:140 - IOException on connection: sw-center.st.com
+2566-03-18 17:39:11,633 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2566-03-18 17:39:11,633 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2566-03-18 17:39:11,635 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
