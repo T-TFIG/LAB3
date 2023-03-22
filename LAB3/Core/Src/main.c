@@ -50,7 +50,7 @@ UART_HandleTypeDef huart2;
 uint32_t Input_A[IC_BUFFER_SIZE];
 float averageRisingedgePeriod;
 int32_t MotorSetDuty = 10; // [(-100) - (100)]%
-int32_t MotorSetRPM = 0;
+int32_t MotorSetRPM = 10;
 uint32_t AVG = 0;
 float Avg_vel = 0.0;
 float Answer;
@@ -148,13 +148,19 @@ int main(void)
 		  timestamp = HAL_GetTick() + 10;
 
 	  	  averageRisingedgePeriod = IC_Calc_Period();
-	  	  if(last != 0){
-	  		  if(averageRisingedgePeriod - last >= 15){
-	  			averageRisingedgePeriod = last;
-	  		  }
+
+	  	  if(averageRisingedgePeriod - last >= 3){
+	  		  averageRisingedgePeriod = last;
 	  	  }
-//		  before_and_after();
+//	  	  if(averageRisingedgePeriod - last <= -3){
+//	  		  averageRisingedgePeriod = last;
+//	  	  }
+		  before_and_after();
+
 		  if(MotorControlEnable == 1){
+//			  if(averageRisingedgePeriod >= MotorSetRPM){
+//				  averageRisingedgePeriod = MotorSetRPM;
+//			  }
 			  PID(MotorSetRPM, averageRisingedgePeriod);
 		  }else if(MotorControlEnable == 0){
 			  motor((3.3*MotorSetDuty)/100, 3.3);
@@ -475,7 +481,7 @@ float IC_Calc_Period()
 		return 0;
 	}else{
 		degree_per_sec = 30 * 0.1667 / milli; // 0.1667 convert degree/s to RPM
-		return (degree_per_sec / 64) * 0.46653;
+		return (degree_per_sec / 64);
 	}
 
 
